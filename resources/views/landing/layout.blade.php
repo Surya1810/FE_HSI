@@ -14,7 +14,7 @@
     <title>HSI | @yield('title')</title>
 
     <!-- Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins:400,500,700,900' rel='stylesheet'>
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="{{ asset('assets/FontAwesome/6.2.1/css/all.min.css') }}">
     <!-- Bootstrap -->
@@ -40,7 +40,7 @@
 
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-xxl border-bottom" aria-label="Offcanvas navbar large">
+    <nav class="navbar navbar-expand-lg border-bottom fixed-top bg-white" aria-label="Offcanvas navbar large">
         <div class="container">
             <a class="navbar-brand my-2" href="{{ route('home') }}"> <img src="{{ asset('assets/logo/Logo Main.png') }}"
                     height="60" alt="HSI Logo" loading="lazy" /></a>
@@ -48,35 +48,35 @@
                 data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2"
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2"
                 aria-labelledby="offcanvasNavbar2Label">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Offcanvas</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                    <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Menu</h5>
+                    <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
+                        <li class="nav-item mx-2">
                             <a class="nav-link active" aria-current="page" href="{{ route('home') }}">Home</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item mx-2">
                             <a class="nav-link" href="#">Tentang HSI</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item mx-2">
                             <a class="nav-link" href="#">Produk</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item mx-2">
                             <a class="nav-link" href="#">Bisnis</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item mx-2">
                             <a class="nav-link" href="#">Informasi</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item mx-2">
                             <a class="nav-link" href="#">Kontak</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('login') }}">Login</a>
+                            <a class="btn btn-hsi-primary mx-3 px-3 rounded-4" href="{{ route('login') }}">Login</a>
                         </li>
                     </ul>
                 </div>
@@ -90,8 +90,29 @@
 
     </main>
 
-    <footer>
-        <div class="container">
+    <footer style="width: 100svw;height: 50svh;">
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-lg-8">
+                    <div class="card rounded-5 text-white bg-hsi-secondary">
+                        <div class="card-body p-5">
+                            <div class="row">
+                                <div class="col-12 col-md-7">
+                                    <h2 style="font-weight: 500">Nikmati Produk Berkualitas <br>
+                                        Bergabung Menjadi
+                                        Reseller
+                                        HSI</h2>
+                                    <small>Anda dapat menjadi Agen Reseller atau Distributor HSI, Pelajari produk dan
+                                        marketing Plan HSI</small>
+                                </div>
+                                <div class="col-12 col-md-5">
+                                    <button class="btn btn-light float-end p-3">Download Marketing Plan</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <ul class="nav justify-content-center">
                 <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Produk</a></li>
                 <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Tentang HSI</a>

@@ -28,15 +28,56 @@ body::-webkit-scrollbar {
     background: #0195a5;
 }
 
+.form-control:focus {
+    border-color: rgba(24, 30, 66, 0.75);
+    box-shadow: 0 0 0 0.2rem rgba(24, 30, 66, 0.25);
+}
+
 .rounded-hsi {
     border-radius: 20px;
 }
 
+/* Button */
+.btn-hsi-primary {
+    background-color: rgba(24, 30, 66, 1);
+    color: #fff;
+}
+
+.btn-hsi-primary:hover {
+    border-color: rgba(24, 30, 66, 1);
+    background-color: rgba(255, 255, 255, 1);
+    color: #181e42;
+}
+.btn-hsi-secondary {
+    background-color: rgba(1, 149, 165, 1);
+    color: #fff;
+}
+
+.btn-hsi-secondary:hover {
+    border-color: rgba(1, 149, 165, 1);
+    background-color: rgba(255, 255, 255, 1);
+    color: #0195a5;
+}
+
+/* Landing Page Style */
+.offcanvas {
+    background-color: rgba(255, 255, 255, 0.85);
+    /* backdrop-filter: blur(5px); */
+}
+.bg-main {
+    background-image: url(/assets/img/background/Background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100svh;
+    width: 100svw;
+}
+
 /* Sidebar */
-.bg-primary {
+.bg-hsi-primary {
     background-color: #181e42 !important;
 }
-.bg-secondary {
+.bg-hsi-secondary {
     background-color: #0195a5 !important;
 }
 
