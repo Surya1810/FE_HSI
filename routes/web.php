@@ -14,5 +14,26 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('landing.home');
+})->name('home');
+
+// Login Page
+Route::get('/login', function () {
+    return view('auth.login');
+})->name('login');
+
+// Dashboard User
+Route::group(['prefix' => 'user', 'as' => 'user.'], function () {
+
+    Route::get('/dashboard', function () {
+        return view('user.dashboard.index');
+    })->name('dashboard');
+});
+
+// Dashboard Admin
+Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
+
+    Route::get('/dashboard', function () {
+        return view('admin.dashboard.index');
+    })->name('dashboard');
 });
